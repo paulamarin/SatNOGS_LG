@@ -1,0 +1,705 @@
+<?xml version="1.0" encoding="utf-8"?>
+<androidx.constraintlayout.widget.ConstraintLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="@color/background"
+    tools:context=".help.HelpActivity">
+
+
+    <include
+        android:id="@+id/top_bar"
+        layout="@layout/activity_top_bar"
+        android:layout_width="0dp"
+        android:layout_height="wrap_content"
+        android:layout_marginBottom="142dp"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="parent" />
+
+    <ScrollView
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:layout_marginTop="80dp"
+        android:padding="10dp"
+        android:scrollbars="vertical"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintHorizontal_bias="1.0"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/top_bar"
+        app:layout_constraintVertical_bias="0.0">
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:orientation="vertical">
+
+            <TextView
+                android:id="@+id/text_version"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:textAlignment="center"
+                android:fontFamily="@font/roboto"
+                android:textColor="@color/textColorClick"
+                android:textSize="@dimen/primary_text_font_size"
+                android:padding="5dp"
+                android:text="@string/text_version" />
+
+            <Button
+                android:id="@+id/butt_location"
+                android:layout_width="220dp"
+                android:layout_height="86dp"
+                android:background="@drawable/button_location"
+                android:elevation="8dp"
+                android:fontFamily="@font/roboto_light"
+                android:minWidth="200dp"
+                android:minHeight="80dp"
+                android:text="@string/button_location"
+                android:textAllCaps="false"
+                android:textColor="@color/textColorPrimary"
+                android:textSize="@dimen/button_text_font_size"
+                />
+
+            <TextView
+                android:id="@+id/butt_location_explain"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:fontFamily="@font/roboto"
+                android:textColor="@color/textColorClick"
+                android:textSize="@dimen/primary_text_font_size"
+                android:padding="5dp"
+                android:text="@string/butt_location_explain" />
+
+            <Button
+                android:id="@+id/butt_movement"
+                android:layout_width="220dp"
+                android:layout_height="86dp"
+                android:background="@drawable/button_movement"
+                android:elevation="8dp"
+                android:fontFamily="@font/roboto_light"
+                android:minWidth="200dp"
+                android:minHeight="80dp"
+                android:text="@string/button_movements"
+                android:textAllCaps="false"
+                android:textColor="@color/textColorPrimary"
+                android:textSize="@dimen/button_text_font_size"
+                />
+
+            <TextView
+                android:id="@+id/butt_movement_explain"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:fontFamily="@font/roboto"
+                android:textColor="@color/textColorClick"
+                android:textSize="@dimen/primary_text_font_size"
+                android:padding="5dp"
+                android:text="@string/butt_movement_explain" />
+
+            <Button
+                android:id="@+id/butt_balloon"
+                android:layout_width="220dp"
+                android:layout_height="86dp"
+                android:background="@drawable/button_balloon"
+                android:elevation="8dp"
+                android:fontFamily="@font/roboto_light"
+                android:minWidth="200dp"
+                android:minHeight="80dp"
+                android:text="@string/button_balloon"
+                android:textAllCaps="false"
+                android:textColor="@color/textColorPrimary"
+                android:textSize="@dimen/button_text_font_size"
+                />
+
+            <TextView
+                android:id="@+id/butt_balloon_explain"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:fontFamily="@font/roboto"
+                android:textColor="@color/textColorClick"
+                android:textSize="@dimen/primary_text_font_size"
+                android:padding="5dp"
+                android:text="@string/butt_balloon_explain" />
+
+            <Button
+                android:id="@+id/butt_shape"
+                android:layout_width="220dp"
+                android:layout_height="86dp"
+                android:background="@drawable/button_shapes"
+                android:elevation="8dp"
+                android:fontFamily="@font/roboto_light"
+                android:minWidth="200dp"
+                android:minHeight="80dp"
+                android:text="@string/button_shapes"
+                android:textAllCaps="false"
+                android:textColor="@color/textColorPrimary"
+                android:textSize="@dimen/button_text_font_size"
+                />
+
+            <TextView
+                android:id="@+id/butt_shape_explain"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:fontFamily="@font/roboto"
+                android:textColor="@color/textColorClick"
+                android:textSize="@dimen/primary_text_font_size"
+                android:padding="5dp"
+                android:text="@string/butt_shape_explain" />
+
+            <Button
+                android:id="@+id/butt_test"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:background="@drawable/button_test"
+                android:elevation="8dp"
+                android:fontFamily="@font/roboto_light"
+                android:minWidth="200dp"
+                android:minHeight="80dp"
+                android:text="@string/button_test"
+                android:textAllCaps="false"
+                android:textColor="@color/textColorPrimary"
+                android:textSize="@dimen/button_text_font_size" />
+
+            <TextView
+                android:id="@+id/butt_test_explain"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:fontFamily="@font/roboto"
+                android:textColor="@color/textColorClick"
+                android:textSize="@dimen/primary_text_font_size"
+                android:padding="5dp"
+                android:text="@string/butt_test_explain2" />
+
+            <Button
+                android:id="@+id/butt_stop"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:background="@drawable/button_test"
+                android:elevation="8dp"
+                android:fontFamily="@font/roboto_light"
+                android:minWidth="200dp"
+                android:minHeight="80dp"
+                android:text="@string/button_stop"
+                android:textAllCaps="false"
+                android:textColor="@color/textColorPrimary"
+                android:textSize="@dimen/button_text_font_size"
+                />
+
+            <TextView
+                android:id="@+id/butt_stop_explain"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:fontFamily="@font/roboto"
+                android:textColor="@color/textColorClick"
+                android:textSize="@dimen/primary_text_font_size"
+                android:padding="5dp"
+                android:text="@string/butt_stop_explain" />
+
+            <Button
+                android:id="@+id/butt_clean_storyboards"
+                android:layout_width="wrap_content"
+                android:layout_height="37dp"
+                android:background="@drawable/button_primary"
+                android:elevation="8dp"
+                android:fontFamily="@font/roboto_light"
+                android:minWidth="200dp"
+                android:minHeight="80dp"
+                android:text="@string/button_clean_story_board"
+                android:textAllCaps="false"
+                android:textColor="@color/textColorPrimary"
+                android:textSize="@dimen/button_text_font_size"
+                />
+
+            <TextView
+                android:id="@+id/butt_clean_storyboards_explain"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:fontFamily="@font/roboto"
+                android:textColor="@color/textColorClick"
+                android:textSize="@dimen/primary_text_font_size"
+                android:padding="5dp"
+                android:text="@string/butt_clean_story_board_explain" />
+
+            <Button
+                android:id="@+id/butt_save_locally"
+                android:layout_width="wrap_content"
+                android:layout_height="37dp"
+                android:background="@drawable/button_primary"
+                android:elevation="8dp"
+                android:fontFamily="@font/roboto_light"
+                android:minWidth="200dp"
+                android:minHeight="80dp"
+                android:text="@string/button_save_locally"
+                android:textAllCaps="false"
+                android:textColor="@color/textColorPrimary"
+                android:textSize="@dimen/button_text_font_size"
+                />
+
+            <TextView
+                android:id="@+id/butt_save_locally_explain"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:fontFamily="@font/roboto"
+                android:textColor="@color/textColorClick"
+                android:textSize="@dimen/primary_text_font_size"
+                android:padding="5dp"
+                android:text="@string/butt_save_locally_explain" />
+
+            <Button
+                android:id="@+id/butt_save_on_google_drive"
+                android:layout_width="wrap_content"
+                android:layout_height="37dp"
+                android:background="@drawable/button_primary"
+                android:elevation="8dp"
+                android:fontFamily="@font/roboto_light"
+                android:minWidth="200dp"
+                android:minHeight="80dp"
+                android:text="@string/button_save_on_google_driver"
+                android:textAllCaps="false"
+                android:textColor="@color/textColorPrimary"
+                android:textSize="@dimen/button_text_font_size"
+                />
+
+            <TextView
+                android:id="@+id/butt_save_on_google_drive_explain"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:fontFamily="@font/roboto"
+                android:textColor="@color/textColorClick"
+                android:textSize="@dimen/primary_text_font_size"
+                android:padding="5dp"
+                android:text="@string/butt_save_on_google_driver_explain" />
+
+            <Button
+                android:id="@+id/butt_delete"
+                android:layout_width="wrap_content"
+                android:layout_height="37dp"
+                android:background="@drawable/button_primary"
+                android:elevation="8dp"
+                android:fontFamily="@font/roboto_light"
+                android:minWidth="200dp"
+                android:minHeight="80dp"
+                android:text="@string/button_delete"
+                android:textAllCaps="false"
+                android:textColor="@color/textColorPrimary"
+                android:textSize="@dimen/button_text_font_size"
+                />
+
+            <TextView
+                android:id="@+id/butt_delete_explain"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:fontFamily="@font/roboto"
+                android:textColor="@color/textColorClick"
+                android:textSize="@dimen/primary_text_font_size"
+                android:padding="5dp"
+                android:text="@string/butt_delete_explain" />
+
+            <Button
+                android:id="@+id/butt_cancel"
+                android:layout_width="wrap_content"
+                android:layout_height="37dp"
+                android:background="@drawable/button_primary"
+                android:elevation="8dp"
+                android:fontFamily="@font/roboto_light"
+                android:minWidth="200dp"
+                android:minHeight="80dp"
+                android:text="@string/button_cancel"
+                android:textAllCaps="false"
+                android:textColor="@color/textColorPrimary"
+                android:textSize="@dimen/button_text_font_size"
+                />
+
+            <TextView
+                android:id="@+id/butt_cancel_explain"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:fontFamily="@font/roboto"
+                android:textColor="@color/textColorClick"
+                android:textSize="@dimen/primary_text_font_size"
+                android:padding="5dp"
+                android:text="@string/butt_cancel_explain" />
+
+            <Button
+                android:id="@+id/butt_add"
+                android:layout_width="wrap_content"
+                android:layout_height="37dp"
+                android:background="@drawable/button_primary"
+                android:elevation="8dp"
+                android:fontFamily="@font/roboto_light"
+                android:minWidth="200dp"
+                android:minHeight="80dp"
+                android:text="@string/button_add"
+                android:textAllCaps="false"
+                android:textColor="@color/textColorPrimary"
+                android:textSize="@dimen/button_text_font_size"
+                />
+
+            <TextView
+                android:id="@+id/butt_add_explain"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:fontFamily="@font/roboto"
+                android:textColor="@color/textColorClick"
+                android:textSize="@dimen/primary_text_font_size"
+                android:padding="5dp"
+                android:text="@string/butt_add_explain" />
+
+            <Button
+                android:id="@+id/butt_save"
+                android:layout_width="wrap_content"
+                android:layout_height="37dp"
+                android:background="@drawable/button_primary"
+                android:elevation="8dp"
+                android:fontFamily="@font/roboto_light"
+                android:minWidth="200dp"
+                android:minHeight="80dp"
+                android:text="@string/button_save"
+                android:textAllCaps="false"
+                android:textColor="@color/textColorPrimary"
+                android:textSize="@dimen/button_text_font_size"
+                />
+
+            <TextView
+                android:id="@+id/butt_save_explain"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:fontFamily="@font/roboto"
+                android:textColor="@color/textColorClick"
+                android:textSize="@dimen/primary_text_font_size"
+                android:padding="5dp"
+                android:text="@string/butt_save_explain" />
+
+            <Button
+                android:id="@+id/butt_add_point"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:background="@drawable/button_primary"
+                android:elevation="8dp"
+                android:fontFamily="@font/roboto_light"
+                android:minWidth="200dp"
+                android:minHeight="80dp"
+                android:text="@string/button_add_point"
+                android:textAllCaps="false"
+                android:textColor="@color/textColorPrimary"
+                android:textSize="@dimen/button_text_font_size"
+                />
+
+            <TextView
+                android:id="@+id/butt_add_point_explain"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:fontFamily="@font/roboto"
+                android:textColor="@color/textColorClick"
+                android:textSize="@dimen/primary_text_font_size"
+                android:padding="5dp"
+                android:text="@string/butt_add_point_explain" />
+
+            <Button
+                android:id="@+id/butt_delete_point"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:background="@drawable/button_primary"
+                android:elevation="8dp"
+                android:fontFamily="@font/roboto_light"
+                android:minWidth="200dp"
+                android:minHeight="80dp"
+                android:text="@string/button_clear_point"
+                android:textAllCaps="false"
+                android:textColor="@color/textColorPrimary"
+                android:textSize="@dimen/button_text_font_size"
+                />
+
+            <TextView
+                android:id="@+id/butt_delete_point_explain"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:fontFamily="@font/roboto"
+                android:textColor="@color/textColorClick"
+                android:textSize="@dimen/primary_text_font_size"
+                android:padding="5dp"
+                android:text="@string/butt_delete_point_explain" />
+
+            <Button
+                android:id="@+id/butt_delete_points"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:background="@drawable/button_primary"
+                android:elevation="8dp"
+                android:fontFamily="@font/roboto_light"
+                android:minWidth="200dp"
+                android:minHeight="80dp"
+                android:text="@string/button_clear_points"
+                android:textAllCaps="false"
+                android:textColor="@color/textColorPrimary"
+                android:textSize="@dimen/button_text_font_size"
+                />
+
+            <TextView
+                android:id="@+id/butt_delete_points_explain"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:fontFamily="@font/roboto"
+                android:textColor="@color/textColorClick"
+                android:textSize="@dimen/primary_text_font_size"
+                android:padding="5dp"
+                android:text="@string/butt_delete_points_explain" />
+
+            <Button
+                android:id="@+id/butt_demo_barranquilla"
+                android:layout_width="407dp"
+                android:layout_height="70dp"
+                android:background="@drawable/button_test"
+                android:elevation="8dp"
+                android:fontFamily="@font/roboto_light"
+                android:minWidth="200dp"
+                android:minHeight="80dp"
+                android:text="@string/button_demo"
+                android:textAllCaps="false"
+                android:textColor="@color/textColorPrimary"
+                android:textSize="@dimen/button_text_font_size"
+                />
+
+            <TextView
+                android:id="@+id/butt_demo_barranquilla_explain"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:fontFamily="@font/roboto"
+                android:textColor="@color/textColorClick"
+                android:textSize="@dimen/primary_text_font_size"
+                android:padding="5dp"
+                android:text="@string/butt_demo_barranquilla_explain" />
+
+            <Button
+                android:id="@+id/butt_connect_google_drive"
+                android:layout_width="480dp"
+                android:layout_height="90dp"
+                android:background="@drawable/button_logo_google_drive"
+                android:elevation="8dp"
+                android:fontFamily="@font/roboto_light"
+                android:minWidth="200dp"
+                android:minHeight="80dp"
+                android:text="@string/button_import_drive"
+                android:textAllCaps="false"
+                android:textColor="@color/textColorPrimary"
+                android:textSize="@dimen/button_text_font_size"
+                />
+
+            <TextView
+                android:id="@+id/butt_connect_google_drive_explain"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:fontFamily="@font/roboto"
+                android:textColor="@color/textColorClick"
+                android:textSize="@dimen/primary_text_font_size"
+                android:padding="5dp"
+                android:text="@string/butt_connect_google_drive_explain" />
+
+            <Button
+                android:id="@+id/butt_update_liquid_galaxy"
+                android:layout_width="480dp"
+                android:layout_height="90dp"
+                android:background="@drawable/button_logo_google_drive"
+                android:elevation="8dp"
+                android:fontFamily="@font/roboto_light"
+                android:minWidth="200dp"
+                android:minHeight="80dp"
+                android:text="@string/button_update_import_drive"
+                android:textAllCaps="false"
+                android:textColor="@color/textColorPrimary"
+                android:textSize="@dimen/button_text_font_size"
+                />
+
+            <TextView
+                android:id="@+id/butt_update_liquid_galaxy_explain"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:fontFamily="@font/roboto"
+                android:textColor="@color/textColorClick"
+                android:textSize="@dimen/primary_text_font_size"
+                android:padding="5dp"
+                android:text="@string/butt_update_liquid_galaxy_explain" />
+
+            <Button
+                android:id="@+id/butt_refresh"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:background="@drawable/button_refresh"
+                android:elevation="8dp"
+                android:fontFamily="@font/roboto_light"
+                android:minWidth="200dp"
+                android:minHeight="80dp"
+                android:text="@string/button_refresh"
+                android:textAllCaps="false"
+                android:textColor="@color/textColorPrimary"
+                android:textSize="@dimen/button_text_font_size"
+                />
+
+            <TextView
+                android:id="@+id/butt_refresh_explain"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:fontFamily="@font/roboto"
+                android:textColor="@color/textColorClick"
+                android:textSize="@dimen/primary_text_font_size"
+                android:padding="5dp"
+                android:text="@string/butt_refresh_explain" />
+
+            <Button
+                android:id="@+id/butt_tour"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:background="@drawable/button_tour"
+                android:elevation="8dp"
+                android:fontFamily="@font/roboto_light"
+                android:minWidth="200dp"
+                android:minHeight="80dp"
+                android:text="@string/button_tour"
+                android:textAllCaps="false"
+                android:textColor="@color/textColorPrimary"
+                android:textSize="@dimen/button_text_font_size"
+                />
+
+            <TextView
+                android:id="@+id/butt_tour_explain"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:fontFamily="@font/roboto"
+                android:textColor="@color/textColorClick"
+                android:textSize="@dimen/primary_text_font_size"
+                android:padding="5dp"
+                android:text="@string/butt_tour_explain" />
+
+            <Button
+                android:id="@+id/butt_stop_tour"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:background="@drawable/button_tour"
+                android:elevation="8dp"
+                android:fontFamily="@font/roboto_light"
+                android:minWidth="200dp"
+                android:minHeight="80dp"
+                android:text="@string/button_stop_tour"
+                android:textAllCaps="false"
+                android:textColor="@color/textColorPrimary"
+                android:textSize="@dimen/button_text_font_size"
+                />
+
+            <TextView
+                android:id="@+id/butt_stop_tour_explain"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:fontFamily="@font/roboto"
+                android:textColor="@color/textColorClick"
+                android:textSize="@dimen/primary_text_font_size"
+                android:padding="5dp"
+                android:text="@string/butt_stop_tour_explain" />
+
+            <Button
+                android:id="@+id/butt_connect_liquid_galaxy"
+                android:layout_width="480dp"
+                android:layout_height="90dp"
+                android:background="@drawable/button_primary"
+                android:elevation="8dp"
+                android:fontFamily="@font/roboto_light"
+                android:minWidth="200dp"
+                android:minHeight="80dp"
+                android:text="@string/button_connect"
+                android:textAllCaps="false"
+                android:textColor="@color/textColorPrimary"
+                android:textSize="@dimen/button_text_font_size"
+                />
+
+            <TextView
+                android:id="@+id/butt_connect_liquid_galaxy_explain"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:fontFamily="@font/roboto"
+                android:textColor="@color/textColorClick"
+                android:textSize="@dimen/primary_text_font_size"
+                android:padding="5dp"
+                android:text="@string/butt_connect_liquid_galaxy_explain" />
+
+            <Button
+                android:id="@+id/butt_try_again_liquid_galaxy"
+                android:layout_width="480dp"
+                android:layout_height="90dp"
+                android:background="@drawable/button_primary"
+                android:elevation="8dp"
+                android:fontFamily="@font/roboto_light"
+                android:minWidth="200dp"
+                android:minHeight="80dp"
+                android:text="@string/button_try_again"
+                android:textAllCaps="false"
+                android:textColor="@color/textColorPrimary"
+                android:textSize="@dimen/button_text_font_size"
+                />
+
+            <TextView
+                android:id="@+id/butt_try_again_liquid_galaxy_explain"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:fontFamily="@font/roboto"
+                android:textColor="@color/textColorClick"
+                android:textSize="@dimen/primary_text_font_size"
+                android:padding="5dp"
+                android:text="@string/butt_try_again_liquid_galaxy_explain" />
+
+            <LinearLayout
+                android:layout_width="wrap_content"
+                android:layout_height="50dp"
+                android:orientation="horizontal">
+
+                <TextView
+                    android:id="@+id/text_position_save"
+                    android:layout_width="wrap_content"
+                    android:layout_height="36dp"
+                    android:layout_marginEnd="20dp"
+                    android:fontFamily="@font/roboto"
+                    android:text="@string/position_save"
+                    android:textColor="@color/textColorClick"
+                    android:textSize="@dimen/hint_text_font_size" />
+
+                <EditText
+                    android:id="@+id/position_save"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:autofillHints="@string/example_save"
+                    android:background="@drawable/rectangle_insert_url"
+                    android:digits="0123456789"
+                    android:fontFamily="@font/roboto"
+                    android:hint="@string/example_save"
+                    android:imeOptions="actionDone"
+                    android:inputType="number"
+                    android:maxLength="30"
+                    android:minWidth="244dp"
+                    android:singleLine="true"
+                    android:enabled="false"
+                    android:focusable="false"
+                    android:textAlignment="center"
+                    android:textColor="@color/textColorClick"
+                    android:textColorHint="@color/hintColor"
+                    android:textSize="@dimen/primary_text_font_size" />
+            </LinearLayout>
+
+            <TextView
+                android:id="@+id/explain_step_position"
+                android:layout_width="wrap_content"
+                android:layout_height="40dp"
+                android:layout_marginEnd="84dp"
+                android:padding="5dp"
+                android:fontFamily="@font/roboto"
+                android:text="@string/explain_step_position"
+                android:textColor="@color/textColorClick"
+                android:textSize="@dimen/primary_text_font_size" />
+
+
+        </LinearLayout>
+
+    </ScrollView>
+
+</androidx.constraintlayout.widget.ConstraintLayout>
+
+
+

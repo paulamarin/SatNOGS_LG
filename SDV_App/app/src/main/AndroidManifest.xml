@@ -1,0 +1,120 @@
+<?xml version="1.0" encoding="utf-8"?>
+<manifest xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    package="com.lglab.diego.simple_cms">
+
+    <uses-permission android:name="android.permission.INTERNET" />
+    <uses-permission android:name="android.permission.READ_EXTERNAL_STORAGE" />
+    <uses-permission android:name="android.permission.GET_ACCOUNTS" />
+    <uses-permission android:name="android.permission.WRITE_EXTERNAL_STORAGE" />
+    <uses-permission android:name="android.permission.ACCESS_MEDIA_LOCATION" />
+
+    <application
+        android:allowBackup="false"
+        android:icon="@drawable/sdv_logo"
+        android:label="@string/app_name"
+        android:requestLegacyExternalStorage="true"
+        android:roundIcon="@mipmap/ic_launcher_round"
+        android:supportsRtl="true"
+        android:theme="@style/Theme.AppCompat.NoActionBar"
+        tools:ignore="AllowBackup"
+        tools:targetApi="q">
+        <activity android:name=".OSatActivity"></activity>
+        <activity
+            android:name=".top_bar.TobBarActivity"
+            android:label="@string/tittle_TobBar"
+            android:screenOrientation="sensorLandscape"
+            tools:ignore="LockedOrientationActivity" />
+        <activity
+            android:name=".create.CreateStoryBoardActivity"
+            android:label="@string/tittle_create"
+            android:screenOrientation="sensorLandscape"
+            tools:ignore="LockedOrientationActivity" />
+        <activity
+            android:name=".create.action.CreateStoryBoardActionLocationActivity"
+            android:label="@string/tittle_create_action_location"
+            android:screenOrientation="sensorLandscape"
+            tools:ignore="LockedOrientationActivity" />
+        <activity
+            android:name=".create.action.CreateStoryBoardActionMovementActivity"
+            android:label="@string/tittle_create_action_movement"
+            android:screenOrientation="sensorLandscape"
+            tools:ignore="LockedOrientationActivity" />
+        <activity
+            android:name=".create.action.CreateStoryBoardActionBalloonActivity"
+            android:label="@string/tittle_create_action_balloon"
+            android:screenOrientation="sensorLandscape"
+            tools:ignore="LockedOrientationActivity" />
+        <activity
+            android:name=".create.action.CreateStoryBoardActionShapeActivity"
+            android:label="@string/tittle_create_action_shape"
+            android:screenOrientation="sensorLandscape"
+            tools:ignore="LockedOrientationActivity" />
+        <activity
+            android:name=".my_storyboards.MyStoryBoardActivity"
+            android:label="@string/tittle_my_storyboard"
+            android:screenOrientation="sensorLandscape"
+            tools:ignore="LockedOrientationActivity" />
+        <activity
+            android:name=".import_google_drive.ImportGoogleDriveActivity"
+            android:label="@string/tittle_import_google_drive"
+            android:screenOrientation="sensorLandscape"
+            tools:ignore="LockedOrientationActivity" />
+        <activity
+            android:name=".create.ExportGoogleDriveActivity"
+            android:label="@string/tittle_export_google_drive"
+            android:screenOrientation="sensorLandscape"
+            tools:ignore="LockedOrientationActivity" />
+        <activity
+            android:name=".account.LogIn"
+            android:label="@string/tittle_account"
+            android:screenOrientation="sensorLandscape"
+            tools:ignore="LockedOrientationActivity" />
+        <activity
+            android:name=".demo.DemoActivity"
+            android:label="@string/tittle_demo"
+            android:screenOrientation="sensorLandscape"
+            tools:ignore="LockedOrientationActivity" />
+        <activity
+            android:name=".demo.DemoOrbit"
+            android:label="@string/tittle_demo"
+            android:screenOrientation="sensorLandscape"
+            tools:ignore="LockedOrientationActivity" />
+        <activity
+            android:name=".about.AboutActivity"
+            android:label="@string/tittle_about"
+            android:screenOrientation="sensorLandscape"
+            tools:ignore="LockedOrientationActivity" />
+        <activity
+            android:name=".web_scraping.WebScrapingActivity"
+            android:label="@string/tittle_web_scraping"
+            android:screenOrientation="sensorLandscape"
+            tools:ignore="LockedOrientationActivity" />
+        <activity
+            android:name=".help.HelpActivity"
+            android:label="@string/tittle_help"
+            android:screenOrientation="sensorLandscape"
+            tools:ignore="LockedOrientationActivity" />
+        <activity
+            android:name=".MainActivity"
+            android:label="@string/tittle_main_activity"
+            android:screenOrientation="sensorLandscape"
+            tools:ignore="LockedOrientationActivity" />
+        <activity
+            android:name=".SplashScreen"
+            android:screenOrientation="sensorLandscape"
+            android:theme="@style/SplashScreen"
+            tools:ignore="LockedOrientationActivity">
+            <intent-filter>
+                <action android:name="android.intent.action.MAIN" />
+
+                <category android:name="android.intent.category.LAUNCHER" />
+            </intent-filter>
+        </activity>
+
+        <meta-data
+            android:name="preloaded_fonts"
+            android:resource="@array/preloaded_fonts" />
+    </application>
+
+</manifest>

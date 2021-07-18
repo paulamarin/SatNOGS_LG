@@ -1,0 +1,204 @@
+<?xml version="1.0" encoding="utf-8"?>
+<androidx.constraintlayout.widget.ConstraintLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:id="@+id/linearLayout"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="@color/background"
+    tools:context=".web_scraping.WebScrapingActivity">
+
+
+    <include
+        android:id="@+id/top_bar"
+        layout="@layout/activity_top_bar"
+        android:layout_width="0dp"
+        android:layout_height="wrap_content"
+        android:layout_marginBottom="142dp"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="parent" />
+
+
+    <TextView
+        android:id="@+id/connection_status"
+        android:layout_width="37dp"
+        android:layout_height="37dp"
+        android:layout_marginTop="20dp"
+        android:layout_marginEnd="44dp"
+        android:layout_marginBottom="20dp"
+        android:background="@drawable/ic_status_connection_red"
+        android:fontFamily="@font/roboto"
+        android:gravity="center_horizontal|top"
+        app:layout_constraintBottom_toTopOf="@+id/text_view_city"
+        app:layout_constraintEnd_toEndOf="@+id/text_based_kevin"
+        app:layout_constraintTop_toBottomOf="@+id/top_bar"
+        app:layout_constraintVertical_bias="0.555" />
+
+    <TextView
+        android:id="@+id/text_based_kevin"
+        android:layout_width="650dp"
+        android:layout_height="wrap_content"
+        android:layout_marginEnd="400dp"
+        android:layout_marginBottom="24dp"
+        android:fontFamily="@font/roboto"
+        android:gravity="center_horizontal|top"
+        android:text="@string/text_based_kevin"
+        android:textAlignment="center"
+        android:textColor="@color/textColorClick"
+        android:textSize="@dimen/primary_text_font_size"
+        app:layout_constraintBottom_toTopOf="@+id/text_view_city"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/top_bar"
+        app:layout_constraintVertical_bias="0.763" />
+
+    <TextView
+        android:id="@+id/text_view_event_name"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginEnd="200dp"
+        android:layout_marginBottom="0dp"
+        android:fontFamily="@font/roboto"
+        android:text="@string/text_view_community_name"
+        android:textAlignment="center"
+        android:textColor="@color/textColorClick"
+        android:textSize="@dimen/hint_text_font_size"
+        app:layout_constraintBottom_toTopOf="@id/my_recycler_view"
+        app:layout_constraintEnd_toEndOf="@id/text_view_city" />
+
+    <TextView
+        android:id="@+id/text_view_city"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginEnd="340dp"
+        android:layout_marginBottom="0dp"
+        android:fontFamily="@font/roboto"
+        android:text="@string/text_view_city"
+        android:textAlignment="center"
+        android:textColor="@color/textColorClick"
+        android:textSize="@dimen/hint_text_font_size"
+        app:layout_constraintBottom_toTopOf="@id/my_recycler_view"
+        app:layout_constraintEnd_toEndOf="@id/text_view_country" />
+
+    <TextView
+        android:id="@+id/text_view_country"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginEnd="350dp"
+        android:layout_marginBottom="0dp"
+        android:fontFamily="@font/roboto"
+        android:text="@string/text_view_country"
+        android:textAlignment="center"
+        android:textColor="@color/textColorClick"
+        android:textSize="@dimen/hint_text_font_size"
+        app:layout_constraintBottom_toTopOf="@id/my_recycler_view"
+        app:layout_constraintEnd_toEndOf="parent" />
+
+    <androidx.recyclerview.widget.RecyclerView
+        android:id="@+id/my_recycler_view"
+        android:layout_width="match_parent"
+        android:layout_height="320dp"
+        android:layout_gravity="center_horizontal"
+        android:background="@color/background"
+        android:layout_marginStart="20dp"
+        android:layout_marginEnd="20dp"
+        android:padding="20dp"
+        android:scrollbars="horizontal"
+        android:textColor="@color/textColorClick"
+        app:layout_constraintBottom_toTopOf="@+id/text_length_community"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent" />
+
+    <TextView
+        android:id="@+id/text_length_community"
+        android:layout_width="650dp"
+        android:layout_height="wrap_content"
+        android:layout_marginEnd="40dp"
+        android:layout_marginBottom="8dp"
+        android:fontFamily="@font/roboto"
+        android:gravity="center_horizontal|top"
+        android:text="@string/text_empty"
+        android:textAlignment="center"
+        android:textColor="@color/textColorClick"
+        android:textSize="@dimen/primary_text_font_size"
+        app:layout_constraintBottom_toTopOf="@+id/butt_tour"
+        app:layout_constraintEnd_toEndOf="parent" />
+
+    <Button
+        android:id="@+id/butt_refresh"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginEnd="28dp"
+        android:layout_marginBottom="20dp"
+        android:background="@drawable/button_refresh"
+        android:elevation="8dp"
+        android:fontFamily="@font/roboto_light"
+        android:minWidth="200dp"
+        android:minHeight="80dp"
+        android:text="@string/button_refresh"
+        android:textAllCaps="false"
+        android:textColor="@color/textColorPrimary"
+        android:textSize="@dimen/button_text_font_size"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintEnd_toStartOf="@+id/butt_tour" />
+
+    <Button
+        android:id="@+id/butt_tour"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginEnd="80dp"
+        android:layout_marginBottom="20dp"
+        android:background="@drawable/button_tour"
+        android:elevation="8dp"
+        android:fontFamily="@font/roboto_light"
+        android:minWidth="220dp"
+        android:minHeight="80dp"
+        android:text="@string/button_tour"
+        android:textAllCaps="false"
+        android:textColor="@color/textColorPrimary"
+        android:textSize="@dimen/button_text_font_size"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintEnd_toStartOf="@+id/action_search" />
+
+    <Button
+        android:id="@+id/butt_stop_tour"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginEnd="84dp"
+        android:layout_marginBottom="20dp"
+        android:background="@drawable/button_tour"
+        android:elevation="8dp"
+        android:fontFamily="@font/roboto_light"
+        android:minWidth="220dp"
+        android:minHeight="80dp"
+        android:text="@string/button_stop_tour"
+        android:textAllCaps="false"
+        android:textColor="@color/textColorPrimary"
+        android:textSize="@dimen/button_text_font_size"
+        android:visibility="invisible"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintEnd_toStartOf="@+id/action_search" />
+
+    <EditText
+        android:id="@+id/action_search"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginEnd="112dp"
+        android:layout_marginBottom="20dp"
+        android:autofillHints="@string/text_search"
+        android:background="@drawable/text_search"
+        android:elevation="8dp"
+        android:fontFamily="@font/roboto_light"
+        android:hint="@string/text_search"
+        android:imeOptions="actionDone"
+        android:inputType="text"
+        android:minWidth="400dp"
+        android:minHeight="80dp"
+        android:singleLine="true"
+        android:textAllCaps="false"
+        android:textColorHint="@color/textColorPrimary"
+        android:textSize="@dimen/button_text_font_size"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintEnd_toEndOf="parent" />
+
+</androidx.constraintlayout.widget.ConstraintLayout>

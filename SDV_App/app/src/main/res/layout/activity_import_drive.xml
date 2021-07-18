@@ -1,0 +1,60 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="@color/background"
+    android:orientation="vertical"
+    tools:context=".import_google_drive.ImportGoogleDriveActivity">
+
+    <include
+        android:id="@+id/top_bar"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        layout="@layout/activity_top_bar"/>
+
+    <androidx.recyclerview.widget.RecyclerView
+        android:id="@+id/my_recycler_view"
+        android:layout_width="wrap_content"
+        android:layout_height="300dp"
+        android:layout_marginStart="40dp"
+        android:layout_marginTop="60dp"
+        android:layout_marginEnd="40dp"
+        android:layout_marginBottom="20dp"
+        android:background="@color/background"
+        android:layout_gravity="center"
+        android:minHeight="578dp"
+        android:padding="20dp"
+        android:scrollbars="vertical"
+        android:visibility="gone"
+        android:textColor="@color/textColorClick" />
+
+    <Button
+        android:id="@+id/butt_update"
+        android:layout_width="480dp"
+        android:layout_height="90dp"
+        android:layout_gravity="center_horizontal"
+        android:background="@drawable/button_logo_google_drive"
+        android:elevation="8dp"
+        android:fontFamily="@font/roboto_light"
+        android:visibility="gone"
+        android:text="@string/button_update_import_drive"
+        android:textSize="@dimen/button_text_font_size"
+        android:textAllCaps="false"
+        android:textColor="@color/textColorPrimary"/>
+
+    <Button
+        android:id="@+id/butt_connect_liquid_galaxy"
+        android:layout_width="480dp"
+        android:layout_height="90dp"
+        android:layout_gravity="center_horizontal"
+        android:layout_marginTop="280dp"
+        android:background="@drawable/button_logo_google_drive"
+        android:elevation="8dp"
+        android:fontFamily="@font/roboto_light"
+        android:text="@string/button_import_drive"
+        android:textSize="@dimen/button_text_font_size"
+        android:textAllCaps="false"
+        android:textColor="@color/textColorPrimary"/>
+
+</LinearLayout>

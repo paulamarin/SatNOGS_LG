@@ -1,0 +1,88 @@
+<?xml version="1.0" encoding="utf-8"?>
+<androidx.constraintlayout.widget.ConstraintLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:id="@+id/linearLayout2"
+    android:layout_width="match_parent"
+    android:layout_height="wrap_content"
+    android:background="@color/background"
+    tools:context=".top_bar.TobBarActivity">
+
+
+    <Button
+        android:id="@+id/butt_about"
+        android:layout_width="0dp"
+        android:layout_height="86dp"
+        android:layout_weight="1"
+        android:background="@color/colorPrimary"
+        android:fontFamily="@font/roboto"
+        android:onClick="buttAbout"
+        android:text="SatNOGS Data Visalisation"
+        android:textAllCaps="false"
+        android:textColor="@color/textColorPrimary"
+        android:textSize="24sp"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintEnd_toStartOf="@+id/butt_connect_menu"
+        app:layout_constraintHorizontal_bias="0.5"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="parent"
+        tools:ignore="ButtonStyle" />
+
+    <Button
+        android:id="@+id/butt_constellations"
+        android:layout_width="0dp"
+        android:layout_height="86dp"
+        android:layout_weight="1"
+        android:background="@color/colorPrimary"
+        android:fontFamily="@font/roboto"
+        android:onClick="buttMyStoryboardsMenu"
+        android:text="Communication Satellites"
+        android:textAllCaps="false"
+        android:textColor="@color/textColorPrimary"
+        android:textSize="24sp"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintHorizontal_bias="0.5"
+        app:layout_constraintStart_toEndOf="@+id/butt_demo"
+        app:layout_constraintTop_toTopOf="parent"
+        tools:ignore="ButtonStyle" />
+
+    <Button
+        android:id="@+id/butt_demo"
+        android:layout_width="0dp"
+        android:layout_height="86dp"
+        android:layout_weight="1"
+        android:background="@color/colorPrimary"
+        android:fontFamily="@font/roboto"
+        android:onClick="buttDemo"
+        android:text="Observation Satellites"
+        android:textAllCaps="false"
+        android:textColor="@color/textColorPrimary"
+        android:textSize="24sp"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintEnd_toStartOf="@+id/butt_constellations"
+        app:layout_constraintHorizontal_bias="0.5"
+        app:layout_constraintStart_toEndOf="@+id/butt_connect_menu"
+        app:layout_constraintTop_toTopOf="parent"
+        tools:ignore="ButtonStyle" />
+
+    <Button
+        android:id="@+id/butt_connect_menu"
+        android:layout_width="0dp"
+        android:layout_height="86dp"
+        android:layout_weight="1"
+        android:background="@color/colorPrimary"
+        android:fontFamily="@font/roboto"
+        android:onClick="buttConnectMenu"
+        android:text="@string/menu_connect"
+        android:textAllCaps="false"
+        android:textColor="@color/textColorPrimary"
+        android:textSize="24sp"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintEnd_toStartOf="@+id/butt_demo"
+        app:layout_constraintHorizontal_bias="0.5"
+        app:layout_constraintStart_toEndOf="@+id/butt_about"
+        app:layout_constraintTop_toTopOf="parent"
+        tools:ignore="ButtonStyle" />
+
+</androidx.constraintlayout.widget.ConstraintLayout>

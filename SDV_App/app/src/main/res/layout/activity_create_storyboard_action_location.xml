@@ -1,0 +1,463 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout
+    xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:orientation="vertical"
+    android:background="@color/background"
+    tools:context=".create.action.CreateStoryBoardActionLocationActivity">
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:orientation="horizontal"
+        android:layout_marginTop="100dp">
+
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginStart="200dp"
+            android:fontFamily="@font/roboto"
+            android:text="@string/location_name"
+            android:textColor="@color/textColorClick"
+            android:textSize="@dimen/primary_text_font_size" />
+
+        <EditText
+            android:id="@+id/file_name"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:minWidth="500dp"
+            android:minHeight="46dp"
+            android:layout_marginStart="50dp"
+            android:autofillHints="@string/example_latitude_longitude_altitude"
+            android:background="@drawable/rectangle_insert_url"
+            android:fontFamily="@font/roboto"
+            android:hint="@string/example_location_name"
+            android:inputType="text"
+            android:maxLength="30"
+            android:singleLine="true"
+            android:textAlignment="center"
+            android:textColorHint="@color/hintColor"
+            android:textSize="@dimen/primary_text_font_size"
+            android:textColor="@color/textColorClick"
+            android:imeOptions="actionDone"
+            />
+
+        <TextView
+            android:id="@+id/connection_status"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginTop="-1dp"
+            android:layout_marginStart="50dp"
+            android:background="@drawable/ic_status_connection_red"
+            android:fontFamily="@font/roboto" />
+
+
+    </LinearLayout>
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:orientation="horizontal"
+        android:layout_marginTop="80dp">
+
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:minWidth="150dp"
+            android:layout_marginStart="150dp"
+            android:text="@string/longitude"
+            android:textSize="@dimen/primary_text_font_size"
+            android:textColor="@color/textColorClick"
+            />
+
+        <EditText
+            android:id="@+id/longitude"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:minWidth="244dp"
+            android:background="@drawable/rectangle_insert_url"
+            android:maxLength="30"
+            android:singleLine="true"
+            android:autofillHints="@string/example_latitude_longitude_altitude"
+            android:hint="@string/example_latitude_longitude_altitude"
+            android:inputType="numberDecimal|numberSigned"
+            android:fontFamily="@font/roboto"
+            android:textColorHint="@color/hintColor"
+            android:textAlignment="center"
+            android:textSize="@dimen/primary_text_font_size"
+            android:textColor="@color/textColorClick"
+            android:imeOptions="actionDone"
+            />
+
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:minWidth="150dp"
+            android:layout_marginStart="100dp"
+            android:text="@string/latitude"
+            android:textSize="@dimen/primary_text_font_size"
+            android:textColor="@color/textColorClick"
+            android:fontFamily="@font/roboto"
+            />
+
+
+
+        <EditText
+            android:id="@+id/latitude"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:minWidth="244dp"
+            android:autofillHints="@string/example_latitude_longitude_altitude"
+            android:background="@drawable/rectangle_insert_url"
+            android:fontFamily="@font/roboto"
+            android:hint="@string/example_latitude_longitude_altitude"
+            android:inputType="numberDecimal|numberSigned"
+            android:maxLength="30"
+            android:singleLine="true"
+            android:textColorHint="@color/hintColor"
+            android:textAlignment="center"
+            android:textSize="@dimen/primary_text_font_size"
+            android:textColor="@color/textColorClick"
+            android:imeOptions="actionDone"
+            />
+
+    </LinearLayout>
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:orientation="horizontal"
+        android:layout_marginTop="30dp">
+
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:minWidth="150dp"
+            android:layout_marginStart="150dp"
+            android:fontFamily="@font/roboto"
+            android:text="@string/altitude"
+            android:textColor="@color/textColorClick"
+            android:textSize="@dimen/primary_text_font_size" />
+
+        <EditText
+            android:id="@+id/altitude"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:minWidth="244dp"
+            android:autofillHints="@string/example_latitude_longitude_altitude"
+            android:background="@drawable/rectangle_insert_url"
+            android:fontFamily="@font/roboto"
+            android:hint="@string/example_latitude_longitude_altitude"
+            android:inputType="numberDecimal"
+            android:maxLength="30"
+            android:singleLine="true"
+            android:textAlignment="center"
+            android:textColorHint="@color/hintColor"
+            android:textSize="@dimen/primary_text_font_size"
+            android:textColor="@color/textColorClick"
+            android:imeOptions="actionDone" />
+
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:minWidth="150dp"
+            android:layout_marginStart="100dp"
+            android:fontFamily="@font/roboto"
+            android:text="@string/duration"
+            android:textColor="@color/textColorClick"
+            android:textSize="@dimen/primary_text_font_size" />
+
+        <EditText
+            android:id="@+id/duration"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:autofillHints="@string/example_latitude_longitude_altitude"
+            android:background="@drawable/rectangle_insert_url"
+            android:fontFamily="@font/roboto"
+            android:hint="@string/action_default_time_location"
+            android:inputType="number"
+            android:maxLength="30"
+            android:minWidth="244dp"
+            android:singleLine="true"
+            android:textAlignment="center"
+            android:textColorHint="@color/hintColor"
+            android:textSize="@dimen/primary_text_font_size"
+            android:textColor="@color/textColorClick"
+            android:imeOptions="actionDone" />
+
+        <TextView
+            android:id="@+id/text_seconds"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="@string/seconds"
+            android:fontFamily="@font/roboto"
+            android:textAlignment="center"
+            android:textColor="@color/textColorClick"
+            android:textSize="@dimen/hint_text_font_size" />
+
+    </LinearLayout>
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:orientation="horizontal"
+        android:layout_marginTop="30dp">
+
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:minWidth="150dp"
+            android:layout_marginStart="150dp"
+            android:fontFamily="@font/roboto"
+            android:text="@string/heading"
+            android:textColor="@color/textColorClick"
+            android:textSize="@dimen/primary_text_font_size" />
+
+        <EditText
+            android:id="@+id/heading"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:minWidth="244dp"
+            android:autofillHints="@string/heading_example"
+            android:background="@drawable/rectangle_insert_url"
+            android:fontFamily="@font/roboto"
+            android:hint="@string/example_latitude_longitude_altitude"
+            android:inputType="numberDecimal"
+            android:maxLength="30"
+            android:singleLine="true"
+            android:textAlignment="center"
+            android:textColorHint="@color/hintColor"
+            android:textSize="@dimen/primary_text_font_size"
+            android:textColor="@color/textColorClick"
+            android:imeOptions="actionDone" />
+
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:minWidth="150dp"
+            android:layout_marginStart="100dp"
+            android:fontFamily="@font/roboto"
+            android:text="@string/tilt"
+            android:textColor="@color/textColorClick"
+            android:textSize="@dimen/primary_text_font_size" />
+
+        <EditText
+            android:id="@+id/tilt"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:minWidth="244dp"
+            android:autofillHints="@string/tilt_example"
+            android:background="@drawable/rectangle_insert_url"
+            android:fontFamily="@font/roboto"
+            android:hint="@string/duration_example"
+            android:inputType="numberDecimal"
+            android:maxLength="30"
+            android:singleLine="true"
+            android:textAlignment="center"
+            android:textColorHint="@color/hintColor"
+            android:textSize="@dimen/primary_text_font_size"
+            android:textColor="@color/textColorClick"
+            android:imeOptions="actionDone" />
+
+    </LinearLayout>
+
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:orientation="horizontal"
+        android:layout_marginTop="30dp">
+
+
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:minWidth="150dp"
+            android:layout_marginStart="150dp"
+            android:fontFamily="@font/roboto"
+            android:text="@string/range"
+            android:textColor="@color/textColorClick"
+            android:textSize="@dimen/primary_text_font_size" />
+
+        <EditText
+            android:id="@+id/range"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:minWidth="244dp"
+            android:autofillHints="@string/range_example"
+            android:background="@drawable/rectangle_insert_url"
+            android:fontFamily="@font/roboto"
+            android:hint="@string/range_example"
+            android:inputType="numberDecimal"
+            android:maxLength="30"
+            android:singleLine="true"
+            android:textAlignment="center"
+            android:textColorHint="@color/hintColor"
+            android:textSize="@dimen/primary_text_font_size"
+            android:textColor="@color/textColorClick"
+            android:imeOptions="actionDone" />
+
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:minWidth="150dp"
+            android:layout_marginStart="100dp"
+            android:fontFamily="@font/roboto"
+            android:text="@string/altitude_mode"
+            android:textColor="@color/textColorClick"
+            android:textSize="@dimen/primary_text_font_size" />
+
+        <Spinner
+            android:id="@+id/altitude_mode"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:minWidth="244dp"
+            android:background="@drawable/spinner_background"
+            android:fontFamily="@font/roboto"
+            android:inputType="text"
+            android:maxLength="30"
+            android:singleLine="true"
+            android:textAlignment="center"
+            android:textColorHint="@color/hintColor"
+            android:textSize="@dimen/primary_text_font_size"
+            android:textColor="@color/textColorClick" />
+
+    </LinearLayout>
+
+    <LinearLayout
+        android:id="@+id/linear_position_save"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:orientation="horizontal"
+        android:layout_marginTop="20dp">
+
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginStart="400dp"
+            android:fontFamily="@font/roboto"
+            android:text="@string/position_save"
+            android:textColor="@color/textColorClick"
+            android:textSize="@dimen/primary_text_font_size" />
+
+        <EditText
+            android:id="@+id/position_save"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:minWidth="244dp"
+            android:layout_marginStart="50dp"
+            android:autofillHints="@string/example_save"
+            android:background="@drawable/rectangle_insert_url"
+            android:fontFamily="@font/roboto"
+            android:hint="@string/example_save"
+            android:digits="0123456789"
+            android:inputType="number"
+            android:maxLength="30"
+            android:singleLine="true"
+            android:textAlignment="center"
+            android:textColorHint="@color/hintColor"
+            android:textSize="@dimen/primary_text_font_size"
+            android:textColor="@color/textColorClick"
+            android:imeOptions="actionDone"
+            />
+
+    </LinearLayout>
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:orientation="horizontal"
+        android:layout_marginTop="2dp">
+
+        <TextView
+            android:id="@+id/explain_step_position"
+            android:layout_width="wrap_content"
+            android:layout_height="36dp"
+            android:layout_marginEnd="84dp"
+            android:layout_marginStart="400dp"
+            android:fontFamily="@font/roboto"
+            android:text="@string/explain_step_position"
+            android:textColor="@color/textColorClick"
+            android:textSize="@dimen/primary_text_font_size"
+            />
+
+    </LinearLayout>
+
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:orientation="horizontal"
+        android:layout_marginTop="30dp">
+
+        <Button
+            android:id="@+id/butt_gdg"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:minWidth="200dp"
+            android:minHeight="80dp"
+            android:layout_marginStart="150dp"
+            android:background="@drawable/button_test"
+            android:elevation="8dp"
+            android:fontFamily="@font/roboto_light"
+            android:text="@string/button_test"
+            android:textAllCaps="false"
+            android:textColor="@color/textColorPrimary"
+            android:textSize="@dimen/button_text_font_size"
+            tools:ignore="ButtonStyle" />
+
+        <Button
+            android:id="@+id/butt_delete"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:minWidth="200dp"
+            android:minHeight="80dp"
+            android:layout_marginStart="40dp"
+            android:background="@drawable/button_primary"
+            android:elevation="8dp"
+            android:fontFamily="@font/roboto_light"
+            android:text="@string/button_delete"
+            android:textAllCaps="false"
+            android:textColor="@color/textColorPrimary"
+            android:textSize="@dimen/button_text_font_size"
+            android:visibility="invisible"
+            tools:ignore="ButtonStyle" />
+
+        <Button
+            android:id="@+id/butt_cancel"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:minWidth="200dp"
+            android:minHeight="80dp"
+            android:layout_marginStart="40dp"
+            android:background="@drawable/button_primary"
+            android:elevation="8dp"
+            android:fontFamily="@font/roboto_light"
+            android:text="@string/button_cancel"
+            android:textAllCaps="false"
+            android:textColor="@color/textColorPrimary"
+            android:textSize="@dimen/button_text_font_size"
+            tools:ignore="ButtonStyle" />
+
+        <Button
+            android:id="@+id/butt_add"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:minWidth="200dp"
+            android:minHeight="80dp"
+            android:layout_marginStart="40dp"
+            android:background="@drawable/button_primary"
+            android:elevation="8dp"
+            android:fontFamily="@font/roboto_light"
+            android:text="@string/button_add"
+            android:textAllCaps="false"
+            android:textColor="@color/textColorPrimary"
+            android:textSize="@dimen/button_text_font_size"
+            tools:ignore="ButtonStyle" />
+
+    </LinearLayout>
+
+
+</LinearLayout>
