@@ -49,7 +49,8 @@ public class DemoActivity extends TobBarActivity {
     @Override
     protected void onCreate(@Nullable Bundle savedInstanceState) {
         super.onCreate(savedInstanceState);
-        setContentView(R.layout.activity_demo);
+        //setContentView(R.layout.activity_demo);
+        setContentView(R.layout.activity_osatellites);
 
         View topBar = findViewById(R.id.top_bar);
         buttDemo = topBar.findViewById(R.id.butt_demo);

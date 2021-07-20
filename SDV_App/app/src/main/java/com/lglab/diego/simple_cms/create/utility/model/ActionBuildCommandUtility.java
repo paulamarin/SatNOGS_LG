@@ -356,19 +356,20 @@ public class ActionBuildCommandUtility {
                 "        </Placemark>\n" +
                 "    </Document>\n" +
                 "</kml>\n" +
-                "' > /var/www/html/shape.kml";
+                "' > /var/www/html/shape.kml"; // see if this is the correct folder
         Log.w(TAG_DEBUG, "DEF COMMAND: " + command.toString());
         return  command;
     }
 
 
     /**Passage à java du code python*/
-    static String buildCommandSendNoaa18() {
+    public static String buildCommandSendNoaa18() {
         Handler handler = new Handler();
         String url = "https://db.satnogs.org/api";
         String result= handler.httpsServiceCall(url);
+        return result; //print them
 
-        return result;
+
     }
     /**static String buildCommandSendNoaa18() {
         //String command = readDemo2File(); //Obtains string from the demo file stored.

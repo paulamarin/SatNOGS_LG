@@ -12,6 +12,7 @@ import androidx.annotation.Nullable;
 import androidx.core.content.ContextCompat;
 
 import com.lglab.diego.simple_cms.create.utility.model.Action;
+import com.lglab.diego.simple_cms.create.utility.model.ActionBuildCommandUtility;
 import com.lglab.diego.simple_cms.create.utility.model.ActionController;
 import com.lglab.diego.simple_cms.demo.DemoThread;
 import com.lglab.diego.simple_cms.top_bar.TobBarActivity;
@@ -57,8 +58,16 @@ public class OSatActivity extends TobBarActivity {
         }
     }*/
 
+    public void testAPI (View view){
+        TextView myTextView = (TextView) findViewById(R.id.textView4);
+
+        String result = ActionBuildCommandUtility.buildCommandSendNoaa18();
+        myTextView.setText(result);
+
+    }
     public void sendNOAA18Const(View view) {
         ActionController.getInstance().sendNOAA18ConstFile(OSatActivity.this);
+
     }
 
     public void sendIridiumConst(View view) {
